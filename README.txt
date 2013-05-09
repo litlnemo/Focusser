@@ -1,2 +1,2 @@
-A web app created to help people with ADHD.
-https://github.com/CheesyN4ch0
+Created by Codrops
+Please read about our license: http://tympanus.net/codrops/licensing/
