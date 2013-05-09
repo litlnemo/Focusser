@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <link href="bootstrap/css/bootsrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootsrap-responsive.css" rel="stylesheet">
+    <link href="js/minimal/_all.css" rel="stylesheet">
+    <link href="css/formly.css" rel="stylesheet">
+    
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery.js" type="text/javascript"></script>
+    <script src="jquery/ui/jquery-ui.js" type="text/javascript"></script>
+    <script src="js/jquery.icheck.js" type="text/javascript"></script>
+    <script src="js/formly.js" type="text/javascript"></script>
+    <script src="js/src/ui.timepickr.js" type="text/javascript"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+            $('#newTodo').hide();
+        });
+
+    </script>
+
+    <title>Focusser: To Do Lists</title>
+</head>
+
+<body>
+    
+    <div class="btn-group">
+        <button class="btn" onclick="$('#newTodo').show()">New Todo List</button>
+    </div>
+    
+    <div id="newTodo">
+        <form id="New Todo Form" width="400px">
+            Task Name: <input type="text" name="Name" place="Task Name"/>
+            Task Description: <input type="text" name="Description" place="Task Description"/>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
