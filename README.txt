@@ -1,1 +1,1 @@
-What are you, a sheep? Just reading things that people tell you to?
+Check the "Issues" page to see what things need to be implemented.
