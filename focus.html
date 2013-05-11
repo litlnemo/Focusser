@@ -3,12 +3,11 @@
 <html>
 <head>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="bootstrap/css/bootsrap.min.css" media="screen" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" media="screen" rel="stylesheet">
     <link href="css/jMenu.jquery.css" media="screen" rel="stylesheet" type="text/css">
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/jquery-ui.js" type="text/javascript"></script>
-    <script src="js/jMenu.jquery.js" type="text/javascript"></script>
     <script src="js/jquery.calendario.js" type="text/javascript"></script>
     <script type="text/javascript">
 $(document).ready(function(){
@@ -30,17 +29,15 @@ $(document).ready(function(){
 <body>
 
 
-    <ul id="jMenu">
-        <li>
-            <a class="fNiv" href="todo.html">To Do Lists</a>
-       	</li>
-       	<li>
-       		<a class="fNiv" href="calendar.html">Calendar</a>  
-       	</li>
-       	<li>
-       		<a class="fNiv" href="reward.html">Rewards</a>
-       	</li>
-
-    </ul>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Focusser</a>
+      <ul class="nav">
+        <li class="active"><a href="todo.html">To Do</a></li>
+        <li class="active"><a href="calendar.html">Calendar</a></li>
+        <li class="active"><a href="reward.html">Rewards </a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
