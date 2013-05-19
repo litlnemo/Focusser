@@ -16,13 +16,81 @@
 //<![CDATA[
     $(document).ready(function(){
             $('#newTodo').hide();
-            $('#timepicker').jtimepicker({
-
-            });
         });
 
 
     //]]>
+    </script>
+
+    <script type="text/javascript">
+        $("#todoSubmit").onClick(function(){
+
+        });
+
+        function populateTodoSelect(){
+            var hourSelect = document.getElementById("hour");
+            var hourOptions = [1];
+
+            for(var i = 1; i < 13; i++){
+                hourOptions[i] = i;
+
+                var hopt = hourOptions[i];
+                var hop = document.createElement("option");
+                op.textContent=opt;
+                op.value = opt;
+                hourSelect.appendChild(opt);
+            }
+
+            var minuteSelect = document.getElementById("minute");
+            var minuteOptions = [];
+
+            for(var j = 1; j < 60; j++){
+                minuteOptions[j] = j
+
+                var mopt = minuteOptions[j];
+                var mop = document.createElement("option");
+                op.textContent=opt;
+                op.value = opt;
+                minuteSelect.appendChild(opt);
+            }
+
+            var daySelect = document.getElementById("date");
+            var dayOptions = [1];
+
+            for (var a=1; a < 31; a++){
+                dayOptions[a] = a;
+
+                var dopt = dayOptions[a];
+                var dop = document.createElement("option");
+                op.textContent=opt;
+                op.value = opt;
+                daySelect.appendChild(opt);
+            }
+
+            var monthSelect = document.getElementById("month");
+            var monthOptions = [1];
+
+            for (var c=1; c < 13; c++){
+
+                monthOptions[c] = c;
+
+                var moopt = monthOptions[c];
+                var moop = document.createElement("option");
+                op.textContent=opt;
+                op.value = opt;
+                monthSelect.appendChild(opt);
+            }
+
+
+
+
+
+
+
+        }
+
+
+
     </script>
 
     <title>Focusser: To Do Lists</title>
@@ -50,14 +118,32 @@
     </div>
 
     <div class="btn-group">
-        <button class="btn" onclick="$('#newTodo').show()">New Todo List</button>
+        <button class="btn" onclick="$('#newTodo').show(); populateTodoSelect();">New Todo List</button>
     </div>
 
     <div id="newTodo">
         <form action="" id="New Todo Form" name="New Todo Form">
             Task Name: <input name="Name" type="text" /> Task Description: <input name="Description" type="text" />
 
-            <div id="timepicker"></div><input type="submit" value="Finish" />
+            <div id="timepicker">
+                <form>
+                    <select id="hour">
+
+                    </select>
+
+                    <select id="minute">
+                    </select>
+
+                    <select id="day"></select>
+
+                    <select id="month"></select>
+
+
+                </form>
+
+            </div>
+
+            <input type="submit" value="Finish" id="todoSubmit" />
         </form>
     </div>
 </body>
