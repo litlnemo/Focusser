@@ -3,12 +3,34 @@
 <html>
 <head>
     <title>Calendar</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"><!-- Bootstrap -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://raw.github.com/stephencelis/timeframe/master/timeframe.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/modernizr.custom.63321.js"></script>
+
+    <script type="text/javascript" >
+        $(document).ready(function(){
+
+
+        });
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        //<![CDATA[
+        new Timeframe('calendar', {
+            startField: 'start',
+            endField: 'end',
+            earliest: new Date(),
+            resetButton: 'reset' });
+        //]]>
+    </script>
+
 </head>
 
 <body>
-    <script src="http://code.jquery.com/jquery.js"></script> <script src="js/bootstrap.min.js"></script>
+
 
     <div class="navbar">
         <div class="navbar-inner">
@@ -29,5 +51,11 @@
             </ul>
         </div>
     </div>
+
+
+    <div id="calendar" ></div>
+
+
+
 </body>
 </html>
